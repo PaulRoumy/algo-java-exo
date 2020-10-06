@@ -7,7 +7,7 @@ package com.company;
          * @param Tableau
          *
          */
-        static void Affichage(int Tableau[]){
+        public static void Affichage(int Tableau[]){
             int i ;
 
             for (i =0; i< Tableau.length;i++){
@@ -19,7 +19,7 @@ package com.company;
          * @param Tableau
          *
         */
-        static void Scoreplus(int Tableau[]){
+        public static void Scoreplus(int Tableau[]){
             int i;
 
             int Valeurmax=-1111;
@@ -35,9 +35,9 @@ package com.company;
         /**
          *Indique si il y a une valeur inferieur à 10 dans le Tableau
          * @param Tableau
-         * 
+         *
          */
-        static void Sup10(int Tableau[]){
+        public static void Sup10(int Tableau[]){
             int i;
             boolean sup10=false;
             for (i=0;i<Tableau.length;i++){
