@@ -19,7 +19,7 @@ package com.company;
          * @param Tableau
          *
         */
-        public static void Scoreplus(int Tableau[]){
+        public static int Scoreplus(int Tableau[]){
             int i;
 
             int Valeurmax=-1111;
@@ -29,7 +29,7 @@ package com.company;
 
                 }
             }
-             System.out.println(Valeurmax);
+             return Valeurmax;
         }
 
         /**
@@ -37,7 +37,7 @@ package com.company;
          * @param Tableau
          *
          */
-        public static void Sup10(int Tableau[]){
+        public static boolean Sup10(int Tableau[]){
             int i;
             boolean sup10=false;
             for (i=0;i<Tableau.length;i++){
@@ -46,15 +46,19 @@ package com.company;
 
                 }
             }
-            System.out.println(sup10);
+            return sup10;
         }
 
         public static void main(String[] args) {
             int [] score={11,45,53,9,46,30,14};
+            int valeurmax=Scoreplus(score);
+            boolean sup=Sup10(score);
             Affichage(score);
             System.out.println();
-            Scoreplus(score);
-            Sup10(score);
+            System.out.println("La valeur max du tableau est " +valeurmax);
+            if (sup){
+            System.out.println("Un nombre du tableau est inférieur à 10");
+            }
         }
 
 
