@@ -3,9 +3,9 @@ package com.company;
 
     public class Fonction {
         /**
-         *
+         *Affiche les valeurs du Tableau
          * @param Tableau
-         * Affiche les valeurs du Tableau
+         *
          */
         static void Affichage(int Tableau[]){
             int i ;
@@ -15,8 +15,9 @@ package com.company;
             }
         }
         /**
-         * @param Tableau
          * Affiche la plus grande valeur du Tableau
+         * @param Tableau
+         *
         */
         static void Scoreplus(int Tableau[]){
             int i;
@@ -32,9 +33,9 @@ package com.company;
         }
 
         /**
-         *
+         *Indique si il y a une valeur inferieur à 10 dans le Tableau
          * @param Tableau
-         * Indique si il y a une valeur inferieur à 10 dans le Tableau
+         * 
          */
         static void Sup10(int Tableau[]){
             int i;
